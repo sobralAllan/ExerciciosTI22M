@@ -124,6 +124,31 @@ namespace ExerciciosTI22M
             return resultado;
         }//fim do IMC
 
+        public double ConverterDolarReal(double valorDolar, double cotacao)
+        {
+            if(valorDolar <= 0 || cotacao <= 0)// || - OU
+            {
+                return -1;
+            }
+            else
+            {
+                return valorDolar * cotacao;
+            }
+        }//fim do método
+        
+        //4. Calcule o perímetro de um quadrado com base no lado.
+        public double PerimetroQuadrado(double lado)
+        {
+            if(lado <= 0)
+            {
+                return -1;
+            }
+            else
+            {
+                return lado * 4;
+            }
+        }//fim do perimetro
+
 
     }//fim do classe
 }//fim do projeto

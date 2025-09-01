@@ -28,6 +28,8 @@ namespace ExerciciosTI22M
                               "\n0. Sair" +
                               "\n1. Exercício 1" + 
                               "\n2. Exercício 2" + 
+                              "\n3. Exercício 3" +
+                              "\n4. Exercício 4" +
                               "\n8. Exercício 8" +
                               "\n9. Exercício 9" + 
                               "\n16. Exercício 16");
@@ -57,6 +59,38 @@ namespace ExerciciosTI22M
                         Console.WriteLine("Informe um número: ");
                         num = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine(modelo.Metade(num));
+                        break;
+                    case 3:
+                        Console.WriteLine("Exercício 03");
+                        Console.WriteLine("Informe o valor em Dólar: ");
+                        double dolar = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Informe a cotação do dia: ");
+                        double cotacao = Convert.ToDouble(Console.ReadLine());
+                        //Operação
+                        double resultado = modelo.ConverterDolarReal(dolar, cotacao);
+                        if (resultado == -1)
+                        {
+                            Console.WriteLine("Valores Informados não são válidos, digite novamente!");
+                        }
+                        else {
+                            Console.WriteLine($"O valor U$ {dolar} em Real é R$ {resultado}");
+                        }
+                        break;
+                    case 4:
+                        Console.WriteLine("Exercício 04");
+                        Console.WriteLine("Informe o lado");
+                        double lado = Convert.ToDouble(Console.ReadLine());
+
+                        resultado = modelo.PerimetroQuadrado(lado);
+                        if(resultado == -1)
+                        {
+                            Console.WriteLine("Impossível calcular perímetro negativo!");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"O perímetro é: {resultado}");
+                        }
                         break;
                     case 8:
                         Console.WriteLine("Exercício 08");
