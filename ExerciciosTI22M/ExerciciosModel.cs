@@ -149,6 +149,23 @@ namespace ExerciciosTI22M
             }
         }//fim do perimetro
 
+        public int ContarLetras(int num)
+        {
+            int somar = 0;
+            //Validação
+            if(num < 0)
+            {
+                num = num * -1;
+            }
+
+            string nume = "" + num;
+            for(int i = 0; i < nume.Length; i++)
+            {
+                somar += Convert.ToInt32(nume.Substring(i, 1));
+            }//fim do for
+            return somar;
+        }//fim do método
+
 
     }//fim do classe
 }//fim do projeto

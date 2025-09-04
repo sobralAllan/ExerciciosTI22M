@@ -32,7 +32,8 @@ namespace ExerciciosTI22M
                               "\n4. Exercício 4" +
                               "\n8. Exercício 8" +
                               "\n9. Exercício 9" + 
-                              "\n16. Exercício 16");
+                              "\n16. Exercício 16" +
+                              "\n23. Exercício 23");
             ModificarOpcao = Convert.ToInt32(Console.ReadLine());
         }//fim do método MostrarMenu
 
@@ -137,6 +138,14 @@ namespace ExerciciosTI22M
                         altura = Convert.ToDouble(Console.ReadLine());
                         //Mostrar
                         Console.WriteLine(modelo.CalcularIMC(peso, altura));
+                        break;
+                    case 23:
+                        Console.WriteLine("Exercício 23");
+                        Console.WriteLine("Informe um número: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        //Mostrar
+                        Console.WriteLine($"A soma dos digitos é: {modelo.ContarLetras(num)}");
                         break;
                     default:
                         Console.WriteLine("Opção escolhida não é válida!");
