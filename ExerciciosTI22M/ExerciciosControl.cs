@@ -33,7 +33,9 @@ namespace ExerciciosTI22M
                               "\n8. Exercício 8" +
                               "\n9. Exercício 9" + 
                               "\n16. Exercício 16" +
-                              "\n23. Exercício 23");
+                              "\n23. Exercício 23" +
+                              "\n26. Exercício 26" +
+                              "\n27. Exercício 27");
             ModificarOpcao = Convert.ToInt32(Console.ReadLine());
         }//fim do método MostrarMenu
 
@@ -146,6 +148,22 @@ namespace ExerciciosTI22M
 
                         //Mostrar
                         Console.WriteLine($"A soma dos digitos é: {modelo.ContarLetras(num)}");
+                        break;
+                    case 26:
+                        Console.WriteLine("Exercício 26");
+                        Console.WriteLine("Informe o valor em Decimal: ");
+                        int decim = Convert.ToInt32(Console.ReadLine());
+
+                        //Mostrar
+                        Console.WriteLine($"Valor em Binário {modelo.Inverter(modelo.ConverterDecimalBinario(decim))}");
+                        break;
+                    case 27:
+                        Console.WriteLine("Exercício 27");
+                        Console.WriteLine("Informe o número em Decimal: ");
+                        decim = Convert.ToInt32(Console.ReadLine());
+
+                        //Mostrar
+                        Console.WriteLine($"Valor em Hexadecimal: {modelo.ConverterHexadecimal(decim)}");
                         break;
                     default:
                         Console.WriteLine("Opção escolhida não é válida!");

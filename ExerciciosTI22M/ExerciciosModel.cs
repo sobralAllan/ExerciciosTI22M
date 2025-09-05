@@ -166,6 +166,64 @@ namespace ExerciciosTI22M
             return somar;
         }//fim do método
 
+        public string ConverterDecimalBinario(int decim)
+        {
+            string binario = "";
+            while(decim != 0)
+            {
+                binario += "" + decim % 2;
+                decim   = decim / 2;
+            }//fim do while
+
+            return binario;
+        }//fim do método
+
+        public string Inverter(string valor)
+        {
+            int tamanho = valor.Length;
+            string binarioInvertido = "";
+            for(int i=tamanho-1; i >= 0; i--)
+            {
+                binarioInvertido += valor.Substring(i, 1); 
+            }//fim do for
+            return binarioInvertido;
+        }//fim do método
+
+        public string ConverterHexadecimal(int decim)
+        {
+            string hexa = "";
+            string result = "";
+            while(decim != 0)
+            {
+                result = "" + decim % 16;
+                switch (result)
+                {
+                    case "10":
+                        result = "A";
+                        break;
+                    case "11":
+                        result = "B"; 
+                        break;
+                    case "12":
+                        result = "C";
+                        break;
+                    case "13":
+                        result = "D";
+                        break;
+                    case "14":
+                        result = "E";
+                        break;
+                    case "15":
+                        result = "F";
+                        break;
+                }//fim do switch
+                decim /= 16;
+                hexa += result;
+            }//fim do while
+            return Inverter(hexa);
+        }//fim do método
+
+
 
     }//fim do classe
 }//fim do projeto
