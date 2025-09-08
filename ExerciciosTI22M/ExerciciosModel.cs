@@ -11,11 +11,13 @@ namespace ExerciciosTI22M
         //Área de variáveis
         private double area;
         private double IMC;
+        public int[] idade;//Estrutura de dados Finita
         //Método Construtor
         public ExerciciosModel()
         {
             this.area = 0;
             this.IMC = 0;
+            this.idade = new int[10];//de 0 até 9
         }//fim do construtor
 
         //Método GET e SET
@@ -222,6 +224,54 @@ namespace ExerciciosTI22M
             }//fim do while
             return Inverter(hexa);
         }//fim do método
+
+        //Preenchendo o vetor
+        public void PreencherVetor()
+        {
+            for(int i=0;i < 10; i++)
+            {
+                do
+                {
+                    Console.Write(i + 1 + "ª idade: ");
+                    idade[i] = Convert.ToInt32(Console.ReadLine());
+                    if (idade[i] <= 0)
+                    {
+                        Console.WriteLine("Erro, informe uma idade positiva!");
+                    }//fim da validação
+                } while (idade[i] <= 0);
+            }//fim do for
+        }//fim do método
+
+        //Método de Consultar
+        public void ConsultarVetor()
+        {
+            for(int i = 0; i < 10; i++)
+            {
+                Console.WriteLine($"{i + 1} ª Idade: {idade[i]}");
+            }//fim do for
+        }//fim do consultar
+
+        public void BuscarIdade(int idade)
+        {
+            Boolean flag = false;
+            for(int i=0; i < 10; i++)
+            {
+                if (this.idade[i] == idade)
+                {
+                    flag = true;
+                    Console.WriteLine($"A idade {idade} está na posição: {i + 1}");
+                }
+            }//fim do for
+
+            if(flag == false)
+            {
+                Console.WriteLine($"A idade {idade} não está no vetor");
+            }//fim da mensagem alternativa
+        }//fim do método Buscar
+
+
+
+
 
 
 

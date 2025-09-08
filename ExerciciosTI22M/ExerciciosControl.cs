@@ -35,7 +35,10 @@ namespace ExerciciosTI22M
                               "\n16. Exercício 16" +
                               "\n23. Exercício 23" +
                               "\n26. Exercício 26" +
-                              "\n27. Exercício 27");
+                              "\n27. Exercício 27" +
+                              "\n28. Exercício 28-Vetor" + 
+                              "\n29. Exercício 29-Vetor" +
+                              "\n30. Exercício 30-Vetor");
             ModificarOpcao = Convert.ToInt32(Console.ReadLine());
         }//fim do método MostrarMenu
 
@@ -164,6 +167,24 @@ namespace ExerciciosTI22M
 
                         //Mostrar
                         Console.WriteLine($"Valor em Hexadecimal: {modelo.ConverterHexadecimal(decim)}");
+                        break;
+                    case 28:
+                        Console.WriteLine("Exercício 28");
+                        //Mostrar
+                        modelo.PreencherVetor();
+                        break;
+                    case 29:
+                        Console.WriteLine("Exercício 29");
+                        //mostrar
+                        modelo.ConsultarVetor();
+                        break;
+                    case 30:
+                        Console.WriteLine("Exercício 30");
+                        //Mostrar
+                        Console.WriteLine("Informe a idade que deseja procurar");
+                        int idade = Convert.ToInt32(Console.ReadLine());
+                        //Buscar no método
+                        modelo.BuscarIdade(idade);
                         break;
                     default:
                         Console.WriteLine("Opção escolhida não é válida!");
