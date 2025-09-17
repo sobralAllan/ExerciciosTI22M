@@ -38,7 +38,11 @@ namespace ExerciciosTI22M
                               "\n27. Exercício 27" +
                               "\n28. Exercício 28-Vetor" + 
                               "\n29. Exercício 29-Vetor" +
-                              "\n30. Exercício 30-Vetor");
+                              "\n30. Exercício 30-Vetor" +
+                              "\n31. Exercício 31-Vetor" + 
+                              "\n32. Exercício 32-Vetor" +
+                              "\n33. Exercício 33-Matriz"+
+                              "\n34. Exercício 34-Matriz");
             ModificarOpcao = Convert.ToInt32(Console.ReadLine());
         }//fim do método MostrarMenu
 
@@ -185,6 +189,30 @@ namespace ExerciciosTI22M
                         int idade = Convert.ToInt32(Console.ReadLine());
                         //Buscar no método
                         modelo.BuscarIdade(idade);
+                        break;
+                    case 31:
+                        Console.WriteLine("Exercício 31 - Vetor");
+                        //Preencher o vetor
+                        modelo.PreencherVet();
+                        modelo.MostrarVet();
+                        break;
+                    case 32:
+                        Console.WriteLine("Exercício 32 - Vetor");
+                        //PreencherVetor
+                        modelo.PreencherVet();
+                        modelo.MostrarInverso();
+                        break;
+                    case 33:
+                        Console.WriteLine("Exercício 33 - Matriz");
+                        //PreencherMatriz
+                        modelo.PreencherMatriz();
+                        modelo.MostrarMatriz();
+                        break;
+                    case 34:
+                        Console.WriteLine("Exercício 34 - Matriz");
+                        //Preencher a Matriz e Mostrar
+                        modelo.PreencherZero();
+                        modelo.MostrarMatriz();
                         break;
                     default:
                         Console.WriteLine("Opção escolhida não é válida!");

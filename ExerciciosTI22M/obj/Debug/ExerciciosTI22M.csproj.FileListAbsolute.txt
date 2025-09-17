@@ -2,7 +2,7 @@ C:\Users\allan.ssilva4\source\repos\ExerciciosTI22M\ExerciciosTI22M\bin\Debug\Ex
 C:\Users\allan.ssilva4\source\repos\ExerciciosTI22M\ExerciciosTI22M\bin\Debug\ExerciciosTI22M.exe
 C:\Users\allan.ssilva4\source\repos\ExerciciosTI22M\ExerciciosTI22M\bin\Debug\ExerciciosTI22M.pdb
 C:\Users\allan.ssilva4\source\repos\ExerciciosTI22M\ExerciciosTI22M\obj\Debug\ExerciciosTI22M.csproj.AssemblyReference.cache
-C:\Users\allan.ssilva4\source\repos\ExerciciosTI22M\ExerciciosTI22M\obj\Debug\ExerciciosTI22M.csproj.SuggestedBindingRedirects.cache
 C:\Users\allan.ssilva4\source\repos\ExerciciosTI22M\ExerciciosTI22M\obj\Debug\ExerciciosTI22M.csproj.CoreCompileInputs.cache
 C:\Users\allan.ssilva4\source\repos\ExerciciosTI22M\ExerciciosTI22M\obj\Debug\ExerciciosTI22M.exe
 C:\Users\allan.ssilva4\source\repos\ExerciciosTI22M\ExerciciosTI22M\obj\Debug\ExerciciosTI22M.pdb
+C:\Users\allan.ssilva4\source\repos\ExerciciosTI22M\ExerciciosTI22M\obj\Debug\ExerciciosTI22M.exe.config

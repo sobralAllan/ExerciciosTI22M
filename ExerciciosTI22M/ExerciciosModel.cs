@@ -12,12 +12,18 @@ namespace ExerciciosTI22M
         private double area;
         private double IMC;
         public int[] idade;//Estrutura de dados Finita
+        public int[] vet;
+        public int[,] matriz;//Declarar a matriz - Cria 
+        
         //Método Construtor
         public ExerciciosModel()
         {
             this.area = 0;
             this.IMC = 0;
             this.idade = new int[10];//de 0 até 9
+            this.vet = new int[10];
+            //Instanciar a matriz
+            this.matriz = new int[3, 3]; //Criando uma matriz 3x3
         }//fim do construtor
 
         //Método GET e SET
@@ -269,8 +275,83 @@ namespace ExerciciosTI22M
             }//fim da mensagem alternativa
         }//fim do método Buscar
 
+        //Leia 10 números e armazene em um vetor
+        public void PreencherVet()
+        {
+            for(int i = 0; i < 10; i++)
+            {
+                Console.WriteLine($"{i + 1}ª Posição: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }//fim do for
+        }//fim do método
+
+        //Criar um método para MOSTRAR O VETOR
+        public void MostrarVet()
+        {
+            for(int i = 0; i < 10; i++)
+            {
+                Console.WriteLine($"{i+1}ª Posição: {vet[i]}");
+            }//fim do método
+        }//fim do método
+
+        //2. Leia 10 números e exiba-os na ordem inversa
+        public void MostrarInverso()
+        {
+            for(int i = 9; i >= 0; i--)
+            {
+                Console.WriteLine($"{i+1}ª Posição: {vet[i]}");   
+            }//fim do for
+        }//fim do método
+
+        //Criar o Preencher Matriz - Método de preenchimento
+        public void PreencherMatriz()
+        {
+            for(int linha=0; linha <= 2; linha++)
+            {
+                for(int coluna=0; coluna <= 2; coluna++)
+                {
+                    Console.Write($"matriz {linha}{coluna}: ");
+                    this.matriz[linha, coluna] = Convert.ToInt32(Console.ReadLine());
+                }//fim do for de coluna
+            }//fim do for de linha
+        }//fim do método
+
+        public void MostrarMatriz()
+        {
+            for(int linha=0; linha <= 2; linha++)
+            {
+                for(int coluna=0;coluna <= 2; coluna++)
+                {
+                    Console.Write($"{matriz[linha, coluna]} ");
+                }//fim da coluna
+                Console.WriteLine("");//Pular Linha
+            }//fim da linha
+        }//fim do método
+
+        public void PreencherZero()
+        {
+            for(int linha=0;linha <= 2; linha++)
+            {
+                for(int coluna=0;coluna <= 2; coluna++)
+                {
+                    if(linha == coluna)
+                    {
+                        matriz[linha, coluna] = 0;
+                    }
+                    else
+                    {
+                        matriz[linha, coluna] = 1;
+                    }
+                }//fim do for de coluna
+            }//fim do for de linha
+        }//fim do método
 
 
+
+
+
+
+        
 
 
 
